@@ -16,7 +16,7 @@ class PrivacyBrowserApp : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        // 1. Quad9 DoH + Forced Dark Mode + Strict Anti-Fingerprinting
+        // 1. Forced Dark Mode + Strict Anti-Fingerprinting
         val settings = GeckoRuntimeSettings.Builder()
             .contentBlocking(
                 ContentBlocking.Settings.Builder()
@@ -25,8 +25,6 @@ class PrivacyBrowserApp : Application() {
                     .build()
             )
             .preferredColorScheme(GeckoRuntimeSettings.COLOR_SCHEME_DARK)
-            .trustedRecursiveResolverMode(GeckoRuntimeSettings.TRR_MODE_ONLY) // Fixed here
-            .trustedRecursiveResolverUri("https://dns.quad9.net/dns-query")
             .build()
 
         // 2. Create GeckoRuntime
