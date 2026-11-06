@@ -1,4 +1,3 @@
-
 package com.panther.browser
 
 import android.os.Bundle
@@ -24,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         session = app.session
         
         // Attach the session to the GeckoView UI
-        session.setSessionAttachedState(GeckoSession.SessionAttachedState.ATTACHED)
         session.setActive(true) // Make it active
         geckoView.setSession(session)
 
@@ -55,7 +53,6 @@ class MainActivity : AppCompatActivity() {
         
         // Get the new fresh session and attach it
         session = app.session
-        session.setSessionAttachedState(GeckoSession.SessionAttachedState.ATTACHED)
         session.setActive(true)
         geckoView.setSession(session)
         
