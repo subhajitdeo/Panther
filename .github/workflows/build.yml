@@ -22,7 +22,7 @@ jobs:
 
     # THIS IS THE NEW LINE THAT UNZIPS UBLOCK
     - name: Extract uBlock Extension
-      run: unzip app/src/main/assets/ublock.zip -d app/src/main/assets/ublock/
+      run: unzip app/src/main/assets/uBlock.zip -d app/src/main/assets/uBlock/
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew || true
