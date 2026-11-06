@@ -32,7 +32,7 @@ android {
 
 dependencies {
     // GeckoView Engine
-    implementation "org.mozilla.geckoview:geckoview:120.0.20231023143019"
+    implementation "org.mozilla.geckoview:geckoview:120.0.20231113165053"
     
     // Android Core
     implementation 'androidx.core:core-ktx:1.12.0'
