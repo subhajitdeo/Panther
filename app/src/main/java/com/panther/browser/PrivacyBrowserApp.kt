@@ -1,4 +1,3 @@
-
 package com.panther.browser
 
 import android.app.Application
@@ -26,7 +25,7 @@ class PrivacyBrowserApp : Application() {
                     .build()
             )
             .preferredColorScheme(GeckoRuntimeSettings.COLOR_SCHEME_DARK)
-            .trustedRecursiveResolverMode(GeckoRuntimeSettings.TRR_MODE_ONLY)
+            .trustedRecursiveResolverMode(GeckoRuntimeSettings.TRR_MODE_ONLY) // Fixed here
             .trustedRecursiveResolverUri("https://dns.quad9.net/dns-query")
             .build()
 
